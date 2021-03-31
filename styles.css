@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: midnightblue;
+  display: flex;
+  margin: auto;
+  border-radius: 0 0 40% 40%;
+}
+
+.logo {
+  height: 10vh;
+  width: 160px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 1.3rem;
+  left: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+span {
+  color: lightseagreen;
+}
+
+
+
+.nav-list {
+  display: flex; /* buyuk ekran icin linkleri yanyana dizme*/
+  width: 60%;
+  height: 10vh;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  letter-spacing: 1px; /* Harfler arasini acmak icin */
+}
+
+a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 1024px){
+
+.navbar {
+  width: 270px;
+  height: 100%;
+  background-color: midnightblue;
+  position: fixed; /* Bunu iptal edip dene! */
+  right: -270px; /* basta 0 iken kodu bitirip, sonra default olarak sayfa acildiginda ekranda gorunmesin diye sagdan disari attik */
+  top: 0;
+  display: flex; /* redundant?*/
+  flex-direction: column;
+  border-radius: 30% 0 0 80%;
+  transition: right .5s;
+}
+
+.logo {
+  height: 10vh;
+  width: 160px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.hamburger-menu {
+  height: 30px;
+  width: 34px;
+  position: fixed; /* Bunu iptal edip dene! */
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: chocolate;
+  transition: all .5s;
+}
+
+.ezclap .bar-1 { /* .ezclap classini js'ye gecmeden hemen once, js'de 3 ayri bar-1,2,3 yazamayacagimiz icin, bar classini da tekrar burada kullanamayacagimiz icin, tek class ismi olarak eklendi */
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.ezclap .bar-2 { /* .ezclap classini js'ye gecmeden hemen once, js'de 3 ayri bar-1,2,3 yazamayacagimiz icin tek class ismi olarak eklendi */
+  opacity: 0;
+}
+
+.ezclap .bar-3 { /* .ezclap classini js'ye gecmeden hemen once, js'de 3 ayri bar-1,2,3 yazamayacagimiz icin tek class ismi olarak eklendi */
+  transform: rotate(45deg) translate(-8px, -6px);
+}
+
+/* Navbari default olarak kendi kalinligi (280px) kadar
+ekranin sagdan disina atmistik, asagidaki kodla tekrar
+menu iconuna tiklayinca ekranin sag kenarina sabitliyoruz. */
+.ezclap {
+  right: 0;
+}
+
+.nav-list {
+  align-items: flex-end;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+    margin: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+}
