@@ -41,8 +41,6 @@ span {
   color: lightseagreen;
 }
 
-
-
 .nav-list {
   display: flex;
   width: 60%;
@@ -73,7 +71,7 @@ a:hover {
   width: 200px;
   height: 100%;
   background-color: midnightblue;
-  position: fixed; 
+  position: fixed;
   right: -200px; 
   top: 0;
   display: flex;
@@ -109,7 +107,7 @@ a:hover {
   transition: all .5s;
 }
 
-.ezclap .bar-1 {
+.ezclap .bar-1 { 
   transform: rotate(-45deg) translate(-8px, 6px);
 }
 
@@ -143,4 +141,3 @@ a:hover {
 }
 
 }
-
