@@ -10,15 +10,3 @@ function collapseNavbar() {
   const x = document.querySelector(".navbar");
   navbar.classList.toggle("ezclap");
 }
-
-/* Eger birden fazla yerde navbar olsaydi,
-tamamini etkilemek icin asagidaki gibi
-for dongusu yazmak lazimdi.
-
-function collapseNavbar() {
-  const x = document.querySelectorAll(".navbar");
-  for (i = 0; i < x.length; i++) {
-    x[i].classList.toggle("ezclap");
-  }
-}
-*/
