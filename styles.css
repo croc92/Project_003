@@ -44,7 +44,7 @@ span {
 
 
 .nav-list {
-  display: flex; /* buyuk ekran icin linkleri yanyana dizme*/
+  display: flex;
   width: 60%;
   height: 10vh;
   margin: auto;
@@ -60,7 +60,7 @@ span {
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
-  letter-spacing: 1px; /* Harfler arasini acmak icin */
+  letter-spacing: 1px;
 }
 
 a:hover {
@@ -70,13 +70,13 @@ a:hover {
 @media only screen and (max-width: 1024px){
 
 .navbar {
-  width: 270px;
+  width: 200px;
   height: 100%;
   background-color: midnightblue;
-  position: fixed; /* Bunu iptal edip dene! */
-  right: -270px; /* basta 0 iken kodu bitirip, sonra default olarak sayfa acildiginda ekranda gorunmesin diye sagdan disari attik */
+  position: fixed; 
+  right: -200px; 
   top: 0;
-  display: flex; /* redundant?*/
+  display: flex;
   flex-direction: column;
   border-radius: 30% 0 0 80%;
   transition: right .5s;
@@ -93,7 +93,7 @@ a:hover {
 .hamburger-menu {
   height: 30px;
   width: 34px;
-  position: fixed; /* Bunu iptal edip dene! */
+  position: fixed;
   top: 1.5rem;
   right: 1.5rem;
   cursor: pointer;
@@ -109,21 +109,18 @@ a:hover {
   transition: all .5s;
 }
 
-.ezclap .bar-1 { /* .ezclap classini js'ye gecmeden hemen once, js'de 3 ayri bar-1,2,3 yazamayacagimiz icin, bar classini da tekrar burada kullanamayacagimiz icin, tek class ismi olarak eklendi */
+.ezclap .bar-1 {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.ezclap .bar-2 { /* .ezclap classini js'ye gecmeden hemen once, js'de 3 ayri bar-1,2,3 yazamayacagimiz icin tek class ismi olarak eklendi */
+.ezclap .bar-2 { 
   opacity: 0;
 }
 
-.ezclap .bar-3 { /* .ezclap classini js'ye gecmeden hemen once, js'de 3 ayri bar-1,2,3 yazamayacagimiz icin tek class ismi olarak eklendi */
+.ezclap .bar-3 { 
   transform: rotate(45deg) translate(-8px, -6px);
 }
 
-/* Navbari default olarak kendi kalinligi (280px) kadar
-ekranin sagdan disina atmistik, asagidaki kodla tekrar
-menu iconuna tiklayinca ekranin sag kenarina sabitliyoruz. */
 .ezclap {
   right: 0;
 }
@@ -136,12 +133,14 @@ menu iconuna tiklayinca ekranin sag kenarina sabitliyoruz. */
 }
 
 .nav-item {
-    margin: 1.5rem;
+    margin: 1.5rem 0;
+
 }
 
 .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 
 }
+
