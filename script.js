@@ -7,6 +7,5 @@ menuIcon.addEventListener("click", () => {
 });
 
 function collapseNavbar() {
-  const x = document.querySelector(".navbar");
   navbar.classList.toggle("ezclap");
 }
